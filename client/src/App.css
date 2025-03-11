@@ -1,0 +1,107 @@
+/* Global Styles */
+body {
+  background-color: #eef2f7;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Home Page Styles */
+.home-page {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.home-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #4e54c8, #8f94fb);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.home-header .logo {
+  height: 40px;
+  width: auto;
+}
+
+.auth-links {
+  display: flex;
+  gap: 15px;
+}
+
+.auth-links a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s;
+}
+
+.auth-links .btn-primary {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+}
+
+.auth-links .btn-primary:hover {
+  background-color: #ff4757;
+}
+
+.auth-links .btn-success {
+  background-color: #1dd1a1;
+  color: white;
+}
+
+.auth-links .btn-success:hover {
+  background-color: #10ac84;
+}
+
+.info-section {
+  margin-top: 100px;
+  padding: 40px 20px;
+  background-color: white;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s;
+}
+
+.info-section h2 {
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.info-section p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .home-header {
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+  }
+  .auth-links {
+      margin-top: 10px;
+  }
+  .info-section {
+      padding: 30px 15px;
+  }
+}

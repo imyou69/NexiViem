@@ -1,0 +1,86 @@
+/* help.css */
+
+.help-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 24px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.help-heading {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.help-description {
+    font-size: 16px;
+    text-align: center;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.help-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.help-card {
+    padding: 16px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.help-card:hover {
+    transform: scale(1.02);
+}
+
+.help-title {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.help-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.help-button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.help-button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+    .help-container {
+        padding: 16px;
+    }
+    .help-heading {
+        font-size: 22px;
+    }
+    .help-card {
+        padding: 12px;
+    }
+    .help-title {
+        font-size: 16px;
+    }
+    .help-text {
+        font-size: 13px;
+    }
+}

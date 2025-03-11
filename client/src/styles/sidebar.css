@@ -1,0 +1,102 @@
+/* Sidebar Styling */
+.menu {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 200px; /* Slimmer sidebar */
+    background: linear-gradient(180deg, #1e293b 0%, #334155 100%);
+    padding: 15px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/* Logo Section */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Logo Text */
+.logo h1 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #ffffff, #a5d8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Menu List */
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    list-style: none;
+    padding: 10px 0; /* Adjusted spacing */
+}
+
+/* Menu Items */
+.menu-list .item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in-out;
+    color: #e0e0e0;
+    position: relative;
+}
+
+/* Hover & Active State */
+.menu-list .item:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateX(4px);
+    color: #ffffff;
+}
+
+/* Active Menu Item */
+.menu-list .item.active {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+/* Adjust Main Content */
+.main-content {
+    margin-left: 220px;
+    width: calc(100% - 220px);
+    padding: 20px;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .menu {
+        width: 60px;
+        padding: 10px;
+        align-items: center;
+    }
+
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .menu-list .item {
+        justify-content: center;
+        font-size: 0;
+        padding: 8px;
+    }
+
+    .main-content {
+        margin-left: 70px;
+        width: calc(100% - 70px);
+    }
+}

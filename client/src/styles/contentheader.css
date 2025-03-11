@@ -1,0 +1,33 @@
+.content-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 20px;
+    background: #fff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.icon-container {
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: background 0.3s;
+}
+
+.icon-container:hover {
+    background: #f1f5f9;
+}
+
+.header-icon {
+    font-size: 22px;
+    color: #555;
+}
+
+.item {
+    text-decoration: none;
+}
